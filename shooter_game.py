@@ -108,7 +108,7 @@ while game:
         if sprite.spritecollide(player, asteroides, False) or sprite.spritecollide(player, enemies, False) or skipEnemy >= 3:
             finish = True
             window.blit(lose, (200, 200))
-        if score >= 11:
+        if score >= 10:
             finish = True
             window.blit(win, (200, 200))
     for e in event.get():
